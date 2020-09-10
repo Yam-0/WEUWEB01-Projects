@@ -1,1 +1,81 @@
 @charset "UTF-8";
+html{
+	height: 100%;
+}
+body{
+	background-color: black;
+	
+	height: 100%;
+	margin: 0px;
+}
+.Container{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+.Top-Banner{
+	flex-grow: 0;
+
+	background-color: #ffffff;
+
+	height: 450px;
+}
+.Middle-Banner{
+	flex-grow: 1;
+
+	background-color: #0a0a0a;
+}
+.Bottom-Banner{
+	flex-grow: 0;
+
+	background-color: #000000;
+
+	height: 125px;
+}
+.Center-Field{
+	background-color: #e47208;
+
+	height: 450px;
+	max-width: 900px;
+	margin-top: -125px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+.Center-Bounds{
+	position: absolute;
+	top: 70px;
+	right: 70px;
+	bottom: 70px;
+	left: 70px;
+	
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+	color: rgb(255, 255, 255);
+	margin-top: 0px;
+	margin-bottom: 50px;
+	width: 100%;
+
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 1;
+	text-transform: uppercase;
+}
+h3{
+	color: rgb(255, 255, 255);
+
+	margin: 0px;
+}
+strong{
+	font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+    .Center-Field{
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+}
