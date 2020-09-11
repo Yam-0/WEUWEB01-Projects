@@ -3,12 +3,13 @@ html{
 	height: 100%;
 	width: 100%;
 	max-width: 100%;
+	min-width: 300px;
 }
 body{
 	background-color: black;
 	max-width: 100%;
-	
-	width: 100%;
+
+	width: inherit;
 	height: 100%;
 
 	margin: 0px;
@@ -16,7 +17,7 @@ body{
 .Container{
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	width: inherit;
 	height: 100%;
 }
 .Top-Banner{
