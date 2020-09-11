@@ -1,12 +1,16 @@
 @charset "UTF-8";
 html{
 	height: 100%;
+	width: 100%;
 	max-width: 100%;
 }
 body{
 	background-color: black;
+	max-width: 100%;
 	
+	width: 100%;
 	height: 100%;
+
 	margin: 0px;
 }
 .Container{
@@ -63,7 +67,6 @@ body{
 	min-height: 250px;
 	position: relative;
 	
-	min-width: 375px;
 	height: auto;
 }
 .Fields{
@@ -263,7 +266,7 @@ p{
 .Bottom-Banner h1{
 	margin-top: 0;
 }
-.Bottom-Banner h3{
+.Bottom-Banner h2{
 	margin-top: 0;
 	font-weight: 500;
 
@@ -295,4 +298,10 @@ p{
 		font-size: 20px;
 	}
 	
+}
+@media (max-width: 300px) {
+	.Center-Bounds{
+		padding-right: 15px;
+		padding-left: 15px;
+	}
 }
