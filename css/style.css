@@ -223,6 +223,7 @@ p{
 	list-style: square;
 	margin-right: 0px;
 	display: inline-block;
+	max-width: max-content;
 
 	font-size: 25px;
 	line-height: 67px;
