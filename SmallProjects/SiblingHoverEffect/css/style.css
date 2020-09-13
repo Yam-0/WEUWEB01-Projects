@@ -1,0 +1,24 @@
+body{
+	margin: 0;
+}
+.Sidebar{
+	max-width: 200px;
+	height: 100vh;
+	background-color: brown;
+	display: flex;
+	flex-direction: column;
+}
+.Item{
+	flex: 1;
+	margin: 10px;
+	transition: linear 100ms;
+	background-color: burlywood;
+}
+.Item:hover{
+	transition: linear 100ms;
+	background-color: white;
+}
+.Item:hover~.Item{
+	transition: linear 100ms;
+	background-color: tomato;
+}

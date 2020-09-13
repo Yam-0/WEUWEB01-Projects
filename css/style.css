@@ -90,7 +90,7 @@ body{
 	text-align-last: center;
 	font-family: "Segoe UI",Roboto,sans-serif;
 }
-h1{
+.Header{
 	text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.356);
 	transition: linear 200ms;
 
@@ -114,12 +114,13 @@ p{
 	margin: 0px;
 	line-height: 22px;
 }
-.Bottom-Field{
+.Middle-Field{
 	transition: linear 200ms;
 
-	margin-top: 50px;
-	margin-bottom: 100px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 
+	text-align: center;
 	min-height: 450px;
 	max-width: 900px;
 	position: relative;
@@ -133,12 +134,12 @@ p{
 .AlignBox{
 	align-content: center;
 	align-items: center;
-	margin-left: 10%;
-	margin-right: 10%;
-	width: auto;
+	margin-bottom: 80px;
+	width: 100%;
 	-webkit-box-flex: 0;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 }
 .Social{
 	order: 1;
@@ -211,12 +212,11 @@ p{
 	order: 2;
 	white-space: nowrap;
 	font-family: "Segoe UI",Roboto,sans-serif;
-	width: auto;
 	font-size: 19px;
 	font-weight: 700;
-	min-width: 300px;
-	margin-top: 60px;
-	margin-bottom: 60px;
+	width: 300px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	display: block;
 }
 .Link-List{
@@ -233,6 +233,7 @@ p{
 .List-Entry{
 	float: left;
 	clear: left;
+	white-space: nowrap;
 	color: white;
 	position: relative;
 	margin-right: 100px;
@@ -255,6 +256,18 @@ p{
 }
 .Link-List a:active{
 	text-decoration: none;
+}
+.Bottom-Field{
+	text-align: center;
+}
+.Field-Header{
+	font-family: "Segoe UI",Roboto,sans-serif;
+	white-space: nowrap;
+	font-size: 36px;
+	font-weight: 400;
+	color: rgb(255, 255, 255);
+
+	text-transform: uppercase;
 }
 .Bottom-Banner{
 	flex-grow: 1;
@@ -289,6 +302,9 @@ p{
 	}
 	.Links{
 		margin-left: 90px;
+	}
+	.Middle-Field .AlignBox{
+		flex-direction: column-reverse;
 	}
 }
 @media (max-width: 670px) {

@@ -1,0 +1,45 @@
+body{
+	margin: 0;
+	background-color:  #293241;
+}
+h1, h2{
+	text-align: center;
+	color: #DFFBFC;
+}
+.Header{
+	z-index: 1;
+	background-color:  #3D5B81;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.Header1{
+	margin: 0;
+	height: 100%;
+}
+.Counter{
+	z-index: 0;
+	background-color: #98C0D9;
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.Button{
+	transition: linear 200ms;
+	height: 250px;
+	position: relative;
+	background-color: #DFFBFC;
+}
+.Button:hover{
+	cursor: pointer;
+	transition: linear 200ms;
+	background-color:  #EE6B4D;
+}
+strong{
+	color: #EE6B4D;
+}
+.Clicked{
+	font-size: 64px;
+}
+.Wasted{
+	font-size: 44px;
+}

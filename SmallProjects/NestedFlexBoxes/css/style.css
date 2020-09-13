@@ -1,0 +1,77 @@
+html{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+h1, h3{
+	text-align: center;
+	text-transform: uppercase;
+}
+h1{
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 2vw;
+}
+h3{
+	font-family: 'Merienda', cursive;
+	font-size: 1vw;
+}
+p{
+	font-size: 2vw;
+	color: #DFFBFC;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body div{
+	height: 100%;
+	width: 100vw;
+}
+.Header{
+	flex: 0;
+	background-color: #DFFBFC;
+	color: #293241;
+}
+.Main{
+	flex: 5;
+	display: flex;
+}
+.Main-Side{
+	background-color:  #3D5B81;
+	flex: 1;
+	width: 10vw;
+	max-width: 400px;
+}
+.Main-Side img{
+	margin: 30px;
+	width: 100%;
+	height: 100%;
+	max-height: 100px;
+}
+.Main-Middle{
+	background-color: #293241;
+	flex: 2;
+}
+.Text-Container{
+	width: auto;
+	height: auto;
+	margin-right: 10vw;
+	margin-left: 10vw;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.Footer{
+	flex: 1;
+	max-height: 100px;
+}
+.Block{
+	height: 100px;
+	width: 100vw;
+	background-color: #EE6B4D;
+}
