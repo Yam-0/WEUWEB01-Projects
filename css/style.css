@@ -1,18 +1,40 @@
 @charset "UTF-8";
-html{
-	height: 100%;
+html, body{
 	width: 100%;
+	height: 100%;
 	max-width: 100%;
 	min-width: 300px;
-}
-body{
-	background-color: black;
-	max-width: 100%;
-
-	width: inherit;
-	height: 100%;
-
 	margin: 0px;
+	background-color: black;
+}
+strong{
+	font-weight: 600;
+}
+p{
+	text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.93);
+	transition: linear 200ms;
+	color: rgb(255, 255, 255);
+	font-size: 28px;
+	font-kerning: 1px;
+	font-weight: 100;
+	line-height: 38px;
+	margin: 0px;
+}
+a{
+	text-decoration: none;
+	font-size: 25px;
+	line-height: 67px;
+	font-kerning: 0.5px;
+	font-weight: 600;
+}
+a:visited{
+	text-decoration: none;
+}
+a:active{
+	text-decoration: none;
+}
+h2{
+	font-weight: 500;
 }
 .Container{
 	display: flex;
@@ -22,15 +44,12 @@ body{
 }
 .Top-Banner{
 	flex-grow: 0;
-
 	background-color: #ffffff;
-
 	min-height: 200px;
 	height: 450px;
 }
 .Middle-Banner{
 	flex-grow: 1;
-
 	background: rgb(37,37,60);
 	background: radial-gradient(circle, rgb(25, 25, 36) 0%, rgb(10, 10, 10) 100%);
 }
@@ -48,7 +67,6 @@ body{
 	);
 }
 .Shadow-Bottom-Top{
-	
 	position: relative;
 	margin-top: -100px;
 	background: linear-gradient(
@@ -57,10 +75,16 @@ body{
 		rgba(0, 0, 0, 0) 100%
 	);
 }
-.Center-Field{
+.Fields{
 	transition: linear 200ms;
+	max-width: 900px;
+	margin-top: -125px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.Center-Field{
+	transition: linear 100ms;
 	box-shadow: 0px 0px 20px #000000;
-	background-color: #e47208;
 	background: linear-gradient(
 		300deg,
 		rgb(143, 18, 18) 0%,
@@ -68,107 +92,87 @@ body{
 	);
 	min-height: 250px;
 	position: relative;
-	
-	height: auto;
-}
-.Fields{
-	transition: linear 200ms;
-
-	max-width: 900px;
-	margin-top: -125px;
-	margin-left: auto;
-	margin-right: auto;
 }
 .Center-Bounds{
 	padding-left: 60px;
 	padding-top: 30px;
 	padding-right: 60px;
 	padding-bottom: 30px;
-	height: auto;
-
 	text-align: center;
 	text-align-last: center;
 	font-family: "Segoe UI",Roboto,sans-serif;
 }
 .Header{
 	text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.356);
-	transition: linear 200ms;
-
-	color: rgb(255, 255, 255);
+	transition: linear 100ms;
+	color: white;
+	text-transform: uppercase;
 	font-weight: 300;
 	font-size: 36px;
+	font-kerning: 1.44px;
 	line-height: 47px;
-	text-transform: uppercase;
 }
-strong{
-	font-weight: 600;
-}
-p{
-	text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.93);
-	transition: linear 200ms;
-
-	color: rgb(255, 255, 255);
-	font-size: 18px;
-	font-kerning: 1px;
-	font-weight: 100;
-	margin: 0px;
-	line-height: 22px;
-}
-.Middle-Field{
-	transition: linear 200ms;
-
+.Field{
 	margin-top: 25px;
-	margin-bottom: 25px;
-
-	text-align: center;
-	min-height: 450px;
-	max-width: 900px;
-	position: relative;
-	display: block;
-	-webkit-box-pack: center;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	flex-flow: row wrap;
-	justify-content: center;
+	margin-bottom: 100px;
 }
 .AlignBox{
+	display: flex;
 	align-content: center;
 	align-items: center;
-	margin-bottom: 80px;
 	width: 100%;
-	-webkit-box-flex: 0;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 }
-.Social{
-	order: 1;
+.Links{
 	white-space: nowrap;
 	font-family: "Segoe UI",Roboto,sans-serif;
-	width: auto;
-	margin-right: 100px;
-	margin-top: 60px;
-	margin-bottom: 60px;
-	display: block;
-
+	font-size: 19px;
+	font-weight: 700;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.List-Entry{
+	float: left;
+	clear: left;
+	color: white;
+	list-style-type: square;
+}
+.Link-List a{
+	transition: linear 100ms;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.Link-List a:hover{
+	transition: linear 100ms;
+	color: rgb(78, 78, 78);
+	text-decoration: none;
+}
+.Field-Header{
+	transition: linear 100ms;
+	color: rgb(255, 255, 255);
+	font-family: "Segoe UI",Roboto,sans-serif;
+	white-space: nowrap;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 400;
+}
+.Social{
+	font-family: "Segoe UI",Roboto,sans-serif;
+	margin-bottom: 50px;
 }
 .Social h1{
-	font-size: 54px;
-	line-height: 45px;
-	font-kerning: 1.3px;
-	font-weight: 600;
+	text-align: left;
+	color: white;
+	font-size: 56px;
+	line-height: 30px;
+	font-kerning: 3.7px;
+	font-weight: 300;
 }
 .Social ul{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
-	flex-wrap: nowrap;
-	display: flex;
-	margin-right: 0px;
-	display: inline-block;
-	width: 300px;
-
 	font-size: 16px;
 	line-height: 30px;
 	font-kerning: 8px;
@@ -180,112 +184,29 @@ p{
 .Social li a{
 	transition: linear 100ms;
 	filter: invert(40%);
-
+	color: white;
 	text-transform: uppercase;
 	display: block;
-	color: white;
 	text-align: center;
-	margin-right: 20px;
-	text-decoration: none;
+	margin: 10px;
 }
 .Social li a:hover{
 	transition: linear 100ms;
 	filter: invert(100%);
-
-	text-decoration: none;
-}
-.Social li a:visited{
-	text-decoration: none;
-}
-.Social li a:active{
-	text-decoration: none;
 }
 .Social li a img{
-	
 	height: 60px;
 	width: 60px;
 }
 .Social li a img:hover{
 	color: white;
 }
-.Links{
-	order: 2;
-	white-space: nowrap;
-	font-family: "Segoe UI",Roboto,sans-serif;
-	font-size: 19px;
-	font-weight: 700;
-	width: 300px;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	display: block;
-}
-.Link-List{
-	list-style: square;
-	margin-right: 0px;
-	display: inline-block;
-	max-width: max-content;
-
-	font-size: 25px;
-	line-height: 67px;
-	font-kerning: 0.37px;
-	font-weight: 600;
-}
-.List-Entry{
-	float: left;
-	clear: left;
-	white-space: nowrap;
-	color: white;
-	position: relative;
-	margin-right: 100px;
-}
-.Link-List a{
-	transition: linear 100ms;
-
-	color: white;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-.Link-List a:hover{
-	transition: linear 100ms;
-
-	color: rgb(78, 78, 78);
-	text-decoration: none;
-}
-.Link-List a:visited{
-	text-decoration: none;
-}
-.Link-List a:active{
-	text-decoration: none;
-}
-.Bottom-Field{
-	text-align: center;
-}
-.Field-Header{
-	font-family: "Segoe UI",Roboto,sans-serif;
-	white-space: nowrap;
-	font-size: 36px;
-	font-weight: 400;
-	color: rgb(255, 255, 255);
-	text-align: center;
-	text-transform: uppercase;
-}
 .Bottom-Banner{
-	flex-grow: 1;
 	font-family: "Segoe UI",Roboto,sans-serif;
 	background-color: #000000;
-	min-height: 150px;
-	max-height: 250px;
-	height: auto;
-	text-align: center;
 	color: white;
-}
-.Bottom-Banner h1{
-	margin-top: 0;
-}
-.Bottom-Banner h2{
-	margin-top: 0;
-	font-weight: 500;
-
+	height: 150px;
+	text-align: center;
 }
 @media (max-width: 1000px) {
 	.Fields{
@@ -297,30 +218,40 @@ p{
 	.AlignBox{
 		flex-direction: column;
 	}
-	.Social{
-		margin-right: 0;
-	}
-	.Links{
-		margin-left: 90px;
-	}
-	.Middle-Field .AlignBox{
+	.Field .AlignBox{
 		flex-direction: column-reverse;
+	}
+	.Social ul{
+		display: flex;
+		justify-self: center;
+		align-items: center;
+	}
+	.Social li {
+		flex: 1;
+		display: inline-block;
+	}
+	.Social h1{
+		text-align: center;
 	}
 }
 @media (max-width: 670px) {
 	.Fields{
-		margin-left: 0px;
-		margin-right: 0px;
+		margin-left: 0;
+		margin-right: 0;
 	}
-
-	h1{
-		font-size: 20px;
+	.Field-Header{
+		font-size: 7vw;
 	}
-	
+	a{
+		font-size: 6vw;
+	}
 }
 @media (max-width: 300px) {
-	.Center-Bounds{
-		padding-right: 15px;
-		padding-left: 15px;
+	.Field-Header{
+		transition: linear 100ms;
+		font-size: 21px;
+	}
+	a{
+		font-size: 18px;
 	}
 }
