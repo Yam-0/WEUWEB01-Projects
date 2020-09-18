@@ -1,0 +1,20 @@
+/* Color Theme Swatches in Hex */
+.Infinity-of-nature-1-hex { color: #010440; }
+.Infinity-of-nature-2-hex { color: #F2E2C4; }
+.Infinity-of-nature-3-hex { color: #F29863; }
+.Infinity-of-nature-4-hex { color: #F27244; }
+.Infinity-of-nature-5-hex { color: #F21D1D; }
+
+/* Color Theme Swatches in RGBA */
+.Infinity-of-nature-1-rgba { color: rgba(1, 4, 63, 1); }
+.Infinity-of-nature-2-rgba { color: rgba(242, 226, 196, 1); }
+.Infinity-of-nature-3-rgba { color: rgba(242, 151, 99, 1); }
+.Infinity-of-nature-4-rgba { color: rgba(242, 114, 67, 1); }
+.Infinity-of-nature-5-rgba { color: rgba(242, 29, 29, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Infinity-of-nature-1-hsla { color: hsla(236, 96, 12, 1); }
+.Infinity-of-nature-2-hsla { color: hsla(39, 64, 85, 1); }
+.Infinity-of-nature-3-hsla { color: hsla(22, 84, 66, 1); }
+.Infinity-of-nature-4-hsla { color: hsla(16, 87, 60, 1); }
+.Infinity-of-nature-5-hsla { color: hsla(0, 89, 53, 1); }
