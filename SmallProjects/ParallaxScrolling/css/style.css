@@ -38,7 +38,7 @@ a:active{
 }
 .Parallax{
 	margin: 0;
-	height: 2000px;
+	height: 110vh;
 	width: 100%;
 	background-attachment: fixed;
 	background-position: center;
