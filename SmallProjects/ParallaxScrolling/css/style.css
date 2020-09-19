@@ -58,12 +58,12 @@ a:active{
 	background-image: url(../assets/Homeworld5.webp);
 }
 .Field{
+	padding-top: 50px; padding-bottom: 50px;
 	margin: 0;
 	justify-content: center;
 	display: flex;
 	align-items: center;
 	width: 100%;
-	min-height: 600px;
 	background-color: #1D3240;
 }
 .Logo-Item{
@@ -75,7 +75,7 @@ a:active{
 .Item{
 	display: flex;
 	flex-direction: column;
-	padding: 20px;
+	padding: 0;
 }
 .Item h1{
 	text-transform: uppercase;
@@ -129,10 +129,5 @@ a:active{
 	}
 	.Item h2{
 		font-size: 3.5vw;
-	}
-	.Item p{
-		font-size: 2.7vw;
-		line-height: 43px;
-		font-weight: 500;
 	}
 }
