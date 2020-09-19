@@ -73,6 +73,7 @@ a:active{
 	height: auto;
 }
 .Item{
+	margin: 10px;
 	display: flex;
 	flex-direction: column;
 	padding: 0;
