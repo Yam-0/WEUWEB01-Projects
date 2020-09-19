@@ -130,4 +130,7 @@ a:active{
 	.Item h2{
 		font-size: 3.5vw;
 	}
+	.Item p{
+		font-size: 5vw;
+	}
 }
