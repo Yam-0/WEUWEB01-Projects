@@ -46,16 +46,16 @@ a:active{
 	background-size: cover;
 }
 .Parallax-Static-1{
-	background-image: url(../assets/homeworld3_1.png);
+	background-image: url(../assets/Homeworld1.png);
 }
 .Parallax-Static-2{
-	background-image: url(../assets/homeworld3_2.png);
+	background-image: url(../assets/Homeworld2.png);
 }
 .Parallax-Static-3{
-	background-image: url(../assets/homeworld3_4.png);
+	background-image: url(../assets/Homeworld3.png);
 }
 .Parallax-Static-4{
-	background-image: url(../assets/homeworld3_5.png);
+	background-image: url(../assets/Homeworld5.png);
 }
 .Field{
 	margin: 0;
