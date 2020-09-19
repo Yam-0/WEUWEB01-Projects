@@ -1,0 +1,134 @@
+@charset "UTF-8";
+:root{
+	font-family: "Segoe UI",Roboto,sans-serif;
+}
+html, body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color:#112026;
+}
+a{
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	transition: linear 100ms;
+	font-size: 27px;
+	line-height: 32px;
+	font-kerning: 0.5px;
+	font-weight: 800;
+	width: 100%;
+	color: #688EA6;
+	text-decoration: none;
+}
+.Field a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+a:hover{
+	transition: linear 100ms;
+	color: white;
+}
+a:visited{
+	text-decoration: none;
+}
+a:active{
+	text-decoration: none;
+}
+.Parallax{
+	margin: 0;
+	height: 2000px;
+	width: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.Parallax-Static-1{
+	background-image: url(../assets/homeworld3_1.png);
+}
+.Parallax-Static-2{
+	background-image: url(../assets/homeworld3_2.png);
+}
+.Parallax-Static-3{
+	background-image: url(../assets/homeworld3_4.png);
+}
+.Parallax-Static-4{
+	background-image: url(../assets/homeworld3_5.png);
+}
+.Field{
+	margin: 0;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	min-height: 600px;
+	background-color: #1D3240;
+}
+.Logo-Item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+}
+.Item{
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+.Item h1{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 3vw;
+	line-height: 16px;
+	font-kerning: 3.5px;
+	font-weight: 400;
+	white-space: nowrap;
+	width: 100%;
+	color: #ffffff;
+}
+.Item h2{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.3vw;
+	line-height: 16px;
+	font-kerning: 3.5px;
+	font-weight: 400;
+	white-space: nowrap;
+	width: 100%;
+	color: #ffffff;
+}
+.Item p{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 27px;
+	line-height: 32px;
+	font-kerning: 0.5px;
+	font-weight: 600;
+	width: 100%;
+	color: #688EA6;
+	text-align: center;
+}
+.Logo{
+	width: 100%;
+	padding: 50px;
+}
+@media (max-width: 1300px){
+	.Field{
+		flex-direction: column;
+	}
+	.Item{
+		width: 90%;
+	}
+	.Logo-Item{
+		width: 90%;
+	}
+	.Item h1{
+		font-size: 6vw;
+	}
+	.Item h2{
+		font-size: 3.5vw;
+	}
+}

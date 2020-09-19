@@ -1,0 +1,20 @@
+/* Color Theme Swatches in Hex */
+.Vestlandet-1-hex { color: #1D3240; }
+.Vestlandet-2-hex { color: #3D5E73; }
+.Vestlandet-3-hex { color: #688EA6; }
+.Vestlandet-4-hex { color: #112026; }
+.Vestlandet-5-hex { color: #A6886D; }
+
+/* Color Theme Swatches in RGBA */
+.Vestlandet-1-rgba { color: rgba(28, 50, 63, 1); }
+.Vestlandet-2-rgba { color: rgba(60, 94, 114, 1); }
+.Vestlandet-3-rgba { color: rgba(104, 142, 165, 1); }
+.Vestlandet-4-rgba { color: rgba(17, 32, 38, 1); }
+.Vestlandet-5-rgba { color: rgba(165, 135, 109, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Vestlandet-1-hsla { color: hsla(202, 37, 18, 1); }
+.Vestlandet-2-hsla { color: hsla(202, 30, 34, 1); }
+.Vestlandet-3-hsla { color: hsla(202, 25, 52, 1); }
+.Vestlandet-4-hsla { color: hsla(196, 37, 10, 1); }
+.Vestlandet-5-hsla { color: hsla(28, 23, 53, 1); }
