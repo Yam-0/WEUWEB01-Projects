@@ -50,16 +50,16 @@ a:active{
 	background-size: cover;
 }
 .Parallax-Static-1{
-	background-image: url(../assets/Homeworld1.webp);
+	background-image: url(../assets/Homeworld1.png);
 }
 .Parallax-Static-2{
-	background-image: url(../assets/Homeworld2.webp);
+	background-image: url(../assets/Homeworld2.png);
 }
 .Parallax-Static-3{
 	background-image: url(../assets/Homeworld3.png);
 }
 .Parallax-Static-4{
-	background-image: url(../assets/Homeworld5.webp);
+	background-image: url(../assets/Homeworld5.png);
 }
 .Field{
 	padding-top: 50px; padding-bottom: 50px;
