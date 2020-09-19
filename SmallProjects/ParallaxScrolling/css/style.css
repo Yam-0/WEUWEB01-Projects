@@ -135,4 +135,7 @@ a:active{
 	.Item h2{
 		font-size: 3.5vw;
 	}
+	.Parallax{
+		background-attachment: local;
+	}
 }
