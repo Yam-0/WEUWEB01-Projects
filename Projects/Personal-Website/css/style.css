@@ -9,7 +9,6 @@
 html, body{
 	margin: 0;
 	padding: 0;
-	height: 3000px;
 	background-color: var(--a-bg-color);
 }
 
@@ -27,12 +26,12 @@ a:visited{
 a:active{
 	text-decoration: none;
 }
-.Page-Container{
+.Header-Container{
 	z-index: 1;
 	position: fixed;
 	width: 100%;
 }
-.Page-Header{
+.Header-Header{
 	transition: linear 100ms;
 	width: 1300px;
 	height: 120px;
@@ -43,14 +42,14 @@ a:active{
 	flex-direction: row;
 	justify-content: space-between;
 }
-.Page-Logo-Box{
+.Header-Logo-Box{
 	width: 350px;
 	background-color: var(--b-bg-color);
 	height: 100%;
 	display: flex;
 	align-items: center;
 }
-.Page-Logo-Box h1{
+.Header-Logo-Box h1{
 	margin: 0;
 	width: 100%;
 	height: 100%;
@@ -73,7 +72,7 @@ a:active{
 .Logo{
 	height: 100%;
 }
-.Page-Logo-Links{
+.Header-Logo-Links{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -88,13 +87,12 @@ a:active{
 	letter-spacing: 0.1em;
 	color: #4B4B4B;
 }
-.Page-Logo-LinkBox{
+.Header-Logo-LinkBox{
 	margin-left: 40px; margin-right: 40px;
 	white-space: nowrap;
 	color: var(--c-bg-color);
 }
 .Parallax{
-	position: absolute;
 	margin: 0;
 	height: 800px;
 	width: 100%;
@@ -110,32 +108,101 @@ a:active{
 .Parallax-Static-1{
 	background-image: url(../assets/ConceptArt.jpg);
 }
+.Center-Grid-Field-Container{
+	width: 100%;
+	margin: 0;
+	margin-bottom: 80px;
+}
+.Center-Grid-Field{
+	transition: linear 100ms;
+	width: 1300px;
+	height: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: var(--c-bg-color);
+	display: grid;
+}
+.Center-Grid-Image{
+
+}
+.Grid-TextBox-Container-Tall{
+	
+}
+.Grid-TextBox-Container{
+
+}
+.TextBox-Container-Wide{
+
+}
+.Social-Container{
+	width: 100%;
+	margin: 0;
+}
+.Social{
+
+}
+.Footer{
+	font-family: Roboto Mono;
+	text-align: center;
+	font-style: normal;
+	text-align: center;
+	color: var(--a-bg-color);
+	background-color: var(--e-bg-color);
+	height: 400px;
+	padding-bottom: 50px;
+	width: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: center;
+}
+.Footer-Text-Big{
+	margin: 0;
+	line-height: 10px;
+	height: 51px;
+	font-size: 44px;
+	font-kerning: 8px;
+	font-weight: 500;
+}
+.Footer-Text-Small{
+	margin: 0;
+	line-height: 10px;
+	height: 27px;
+	font-size: 31px;
+	font-kerning: 8.5px;
+	font-weight: 100;
+}
 @media (max-width: 1300px){
-	.Page-Header{
+	.Header-Header{
+		margin: 0;
+		width: 100%;
+	}
+	.Center-Grid-Field{
 		margin: 0;
 		width: 100%;
 	}
 }
 @media (max-width: 1050px){
-	.Page-Container
+	.Header-Container
 	{
 		position: absolute;
 	}
-	.Page-Header{
+	.Header-Header{
 		flex-direction: column;
 		height: auto;
 	}
-	.Page-Logo-Box{
+	.Header-Logo-Box{
 		height: 120px;
 		width: 100%;
 	}
-	.Page-Logo-Links{
+	.Header-Logo-Links{
 		height: 100%;
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: space-between;
 	}
-	.Page-Logo-LinkBox{
+	.Header-Logo-LinkBox{
 		margin-left: auto;
 		margin-right: auto;
 		padding-top: 20px;
@@ -146,7 +213,7 @@ a:active{
 		width: 90%;
 		text-align: start;
 	}
-	.Page-Logo-LinkBox:last-of-type{
+	.Header-Logo-LinkBox:last-of-type{
 		border-bottom: none;
 	}
 	.Parallax{
