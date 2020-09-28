@@ -28,7 +28,7 @@ a:active {
 	text-decoration: none;
 }
 .Header-Container {
-	z-index: 1;
+	z-index: 2;
 	position: fixed;
 	width: 100%;
 }
@@ -133,11 +133,61 @@ a:active {
 	width: 300px;
 	height: 300px;
 	margin: 0;
+	padding: 0;
 	background-color: var(--a-bg-color);
-	border: 2px solid black;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+}
+.Center-Grid-Item-Tall {
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	width: inherit;
+	height: 500px;
+	align-self: flex-end;
+	background-color: var(--a-bg-color);
+}
+.Center-Grid-Item-Tall-TextRows {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.Center-Grid-Item-Tall-Header {
+	margin: 20px;
+	margin-top: 36px;
+	text-transform: uppercase;
+	font-family: Roboto Mono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 60px;
+	letter-spacing: 0.7em;
+	color: var(--c-bg-color);
+}
+.Item-Image {
+	margin: 0;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+.Item-Image-1 {
+	background-image: url("../assets/Homeworld.png");
+}
+.Item-Image-2 {
+	background-image: url("../assets/Chess.jpg");
+}
+.Item-Image-3 {
+	background-image: url("../assets/Code.jpg");
+}
+.Item-Image-4 {
+	background-image: url("../assets/Liquid.png");
+}
+.Item-Image-5 {
+	background-image: url("../assets/TAGEGE.png");
+}
+.Item-Image-6 {
+	background-image: url("../assets/SwainThresh.png");
 }
 .Center-Grid-Item-TextRows {
 	width: 250px;
@@ -184,9 +234,8 @@ a:active {
 	justify-content: center;
 }
 .Arrow img {
-	height: 90%;
-	width: 90%;
-	background-position: center;
+	height: 70%;
+	width: 70%;
 }
 .TextBox-Container-Wide {
 	width: 200px;
