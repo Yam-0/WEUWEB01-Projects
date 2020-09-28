@@ -518,6 +518,18 @@ a:active {
 	.Item-Image-Arrow-4{
 		transform: rotate(0deg);
 	}
+	.Social-Container{
+		flex-direction: column;
+		align-items: center;
+	}
+	.Social-Right{
+		width: 100%;
+		justify-content: center;
+	}
+	.Social-Left{
+		width: 100%;
+		justify-content: center;
+	}
 }
 @media (max-width: 600px){
 	.Center-Grid-Field{
@@ -550,6 +562,11 @@ a:active {
 	}
 	.Item-Image-Arrow-4{
 		transform: rotate(90deg);
+	}
+	.Social-Right{
+		flex-direction: column;
+		height: 600px;
+		align-items: center;
 	}
 }
 @media (min-width: 2500px) {
