@@ -12,7 +12,6 @@ body {
 	padding: 0;
 	background-color: var(--a-bg-color);
 }
-
 a {
 	transition: linear 100ms;
 	text-decoration: none;
@@ -135,7 +134,7 @@ a:active {
 	background-color: var(--a-bg-color);
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: flex-start;
 }
 .Center-Grid-Item-Tall {
 	z-index: 1;
@@ -145,16 +144,14 @@ a:active {
 	height: 500px;
 	align-self: flex-end;
 	background-color: var(--a-bg-color);
-	box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.35);
-}
-.Center-Grid-Item-Tall-TextRows {
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	flex-direction: row;
+	justify-content: center;
+	box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.35);
 }
 .Center-Grid-Item-Tall-Header {
 	margin-right: 20px;
-	margin-left: 20px;
+	margin-left: 36px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	text-transform: uppercase;
@@ -171,6 +168,8 @@ a:active {
 	background-size: cover;
 	height: 100%;
 	width: 100%;
+	box-shadow: inset 0px 0px 18px rgba(0, 0, 0, 0.5);
+
 }
 .Item-Image-1 {
 	background-image: url("../assets/Homeworld.png");
@@ -237,6 +236,7 @@ a:active {
 .Arrow img {
 	height: 70%;
 	width: 70%;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5)); 
 }
 .TextBox-Container-Wide {
 	width: 200px;
@@ -247,13 +247,26 @@ a:active {
 .Social-Container {
 	width: 100%;
 	margin: 0;
+	display: flex;
+
 }
-.Social {
-	height: 200px;
-	width: 1300px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: #3cc74f;
+.Social-Left{
+	height: 300px;
+	width: calc(50% - 150px);
+	background-color: var(--a-bg-color);
+	display: flex;
+	flex-direction: row-reverse;
+}
+.Social-Right {
+	height: 300px;
+	width: calc(50% + 150px);
+	background-color: var(--d-bg-color);
+	display: flex;
+	box-shadow: inset 0px 14px 10px -8px #000000;
+}
+.Social-Box-Container{
+	height: 300px;
+	width: 300px;
 }
 .Footer {
 	font-family: Roboto Mono;
@@ -268,8 +281,20 @@ a:active {
 	margin: 0;
 	display: flex;
 	flex-direction: column;
+}
+.Footer-LeftStrip-Container{
+	justify-self: flex-start;
+	height: 100px;
+	width: calc(50% - 150px);
+	background-color: var(--a-bg-color);
+	box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.35);
+}
+.Footer-TextBox{
+	display: flex;
+	flex-direction: column;
 	justify-content: flex-end;
 	align-items: center;
+	height: 100%;
 }
 .Footer-Text-Big {
 	margin: 0;
