@@ -120,10 +120,6 @@ a:active {
 	background-color: white;
 	display: grid;
 	justify-content: center;
-	grid-template-areas:
-		"Tall Picture Text"
-		"Picture Text Picture"
-		"Text Picture Text";
 	grid-template-columns: repeat(3, auto);
 }
 .Center-Grid-Item {
@@ -136,11 +132,38 @@ a:active {
 	flex-direction: row;
 	justify-content: flex-start;
 }
+.Order-Item-1{
+	order: 1;
+}
+.Order-Item-2{
+	order: 2;
+}
+.Order-Item-3{
+	order: 3;
+}
+.Order-Item-4{
+	order: 4;
+}
+.Order-Item-5{
+	order: 5;
+}
+.Order-Item-6{
+	order: 6;
+}
+.Order-Item-7{
+	order: 7;
+}
+.Order-Item-8{
+	order: 8;
+}
+.Order-Item-9{
+	order: 9;
+}
 .Center-Grid-Item-Tall {
 	z-index: 1;
 	margin: 0;
 	padding: 0;
-	width: inherit;
+	width: 300px;
 	height: 500px;
 	align-self: flex-end;
 	background-color: var(--a-bg-color);
@@ -166,9 +189,9 @@ a:active {
 .Item-Image {
 	margin: 0;
 	background-size: cover;
-	height: 100%;
-	width: 100%;
-	box-shadow: inset 0px 0px 18px rgba(0, 0, 0, 0.5);
+	height: 300px;
+	width: 300px;
+	box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 1);
 }
 .Item-Image-1 {
 	background-image: url("../assets/Homeworld.png");
@@ -188,11 +211,32 @@ a:active {
 .Item-Image-6 {
 	background-image: url("../assets/SwainThresh.png");
 }
+.Item-Image-Arrow{
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	background-image: url(../assets/ImageArrow.png);
+}
+.Item-Image-Arrow-1{
+	transform: rotate(0deg);
+}
+.Item-Image-Arrow-2{
+	transform: rotate(90deg);
+}
+.Item-Image-Arrow-3{
+	transform: rotate(180deg);
+}
+.Item-Image-Arrow-4{
+	transform: rotate(0deg);
+}
 .Center-Grid-Item-TextRows {
 	width: 250px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+.Center-Grid-Item-TextRows-Full{
+	margin-right: 50px;
 }
 .TextBox-Header {
 	width: auto;
@@ -296,14 +340,16 @@ a:active {
 	height: 100%;
 }
 .Footer-Text-Big {
+	white-space: nowrap;
 	margin: 0;
 	line-height: 10px;
 	height: 51px;
-	font-size: 44px;
+	font-size: 34px;
 	font-kerning: 8px;
 	font-weight: 500;
 }
 .Footer-Text-Small {
+	white-space: nowrap;
 	margin: 0;
 	line-height: 10px;
 	height: 27px;
@@ -359,6 +405,74 @@ a:active {
 	}
 	.Parallax {
 		background-attachment: local;
+	}
+}
+@media (max-width: 900px){
+	.Center-Grid-Field{
+		grid-template-columns: repeat(2, 300px);
+	}
+	.Grid-Center{
+		grid-column: span 2 / auto;
+		width: calc(100% - 50px);
+		display: flex;
+		margin-left: 50px;
+	}
+	.Order-Item-2{
+		order: 3;
+	}
+	.Order-Item-3{
+		order: 1;
+	}
+	.Order-Item-6{
+		order: 7;
+	}
+	.Order-Item-7{
+		order: 6;
+	}
+	.Item-Image-Arrow-1{
+		transform: rotate(180deg);
+	}
+	.Item-Image-Arrow-2{
+		transform: rotate(0deg);
+	}
+	.Item-Image-Arrow-3{
+		transform: rotate(180deg);
+	}
+	.Item-Image-Arrow-4{
+		transform: rotate(0deg);
+	}
+}
+@media (max-width: 600px){
+	.Center-Grid-Field{
+		grid-template-columns: 300px;
+	}
+	.Grid-Center{
+		grid-column: 1;
+		margin-left: 0;
+	}
+	.Order-Item-2{
+		order: 2;
+	}
+	.Order-Item-3{
+		order: 3;
+	}
+	.Order-Item-6{
+		order: 6;
+	}
+	.Order-Item-7{
+		order: 7;
+	}
+	.Item-Image-Arrow-1{
+		transform: rotate(90deg);
+	}
+	.Item-Image-Arrow-2{
+		transform: rotate(90deg);
+	}
+	.Item-Image-Arrow-3{
+		transform: rotate(90deg);
+	}
+	.Item-Image-Arrow-4{
+		transform: rotate(90deg);
 	}
 }
 @media (min-width: 2500px) {
