@@ -264,7 +264,7 @@ a:active {
 	font-family: Russo One;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 37px;
+	font-size: 34px;
 	margin: 10px;
 	margin-top: 36px;
 	margin-left: 36px;
@@ -553,6 +553,9 @@ a:active {
 		width: 100%;
 		justify-content: center;
 	}
+	.Footer-LeftStrip-Container{
+		display: none;
+	}
 }
 @media (max-width: 600px){
 	.Center-Grid-Field{
@@ -590,9 +593,6 @@ a:active {
 		flex-direction: column;
 		height: 600px;
 		align-items: center;
-	}
-	.Footer-LeftStrip-Container{
-		display: none;
 	}
 }
 @media (min-width: 2500px) {
