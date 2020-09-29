@@ -123,6 +123,7 @@ a:active {
 	background-repeat: no-repeat;
 	background-size: auto;
 	background-position-y: -10vw;
+	box-shadow: 0px 2px 32px rgba(0, 0, 0, 0.5);
 }
 .Parallax-Static-1 {
 	background-image: url(../assets/ConceptArt.jpg);
@@ -137,7 +138,6 @@ a:active {
 	width: 1300px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: white;
 	display: grid;
 	justify-content: center;
 	grid-template-columns: repeat(3, auto);
@@ -147,7 +147,6 @@ a:active {
 	height: 300px;
 	margin: 0;
 	padding: 0;
-	background-color: var(--a-bg-color);
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
