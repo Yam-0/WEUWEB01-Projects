@@ -76,7 +76,7 @@ a:active {
 	height: 80%;
 }
 .Navbar-Button{
-	background-image: url(../assets/MenuItem.png);
+	background-image: url(../assets/MenuItem.webp);
 	background-size: cover;
 	display: none;
 	height: 60px;
@@ -214,28 +214,28 @@ a:active {
 	box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 1);
 }
 .Item-Image-1 {
-	background-image: url("../assets/Homeworld.png");
+	background-image: url("../assets/Homeworld.webp");
 }
 .Item-Image-2 {
-	background-image: url("../assets/Chess.png");
+	background-image: url("../assets/Chess.webp");
 }
 .Item-Image-3 {
-	background-image: url("../assets/Code.png");
+	background-image: url("../assets/Code.webp");
 }
 .Item-Image-4 {
-	background-image: url("../assets/Liquid.png");
+	background-image: url("../assets/Liquid.webp");
 }
 .Item-Image-5 {
-	background-image: url("../assets/TAGEGE.png");
+	background-image: url("../assets/TAGEGE.webp");
 }
 .Item-Image-6 {
-	background-image: url("../assets/SwainThresh.png");
+	background-image: url("../assets/SwainThresh.webp");
 }
 .Item-Image-Arrow{
 	z-index: 1;
 	height: 100%;
 	width: 100%;
-	background-image: url("../assets/ImageArrow.png");
+	background-image: url("../assets/ImageArrow.webp");
 }
 .Item-Image-Arrow-1{
 	transform: rotate(0deg);
