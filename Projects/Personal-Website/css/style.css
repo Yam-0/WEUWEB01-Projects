@@ -469,9 +469,6 @@ a:active {
 	}
 }
 @media (max-width: 1050px) {
-	.Header-Container {
-		position: absolute;
-	}
 	.Header-Header {
 		flex-direction: column;
 		height: auto;
@@ -517,20 +514,23 @@ a:active {
 		display: flex;
 		margin-left: 50px;
 	}
-	.Order-Item-2{
-		order: 3;
-	}
-	.Order-Item-3{
-		order: 1;
-	}
-	.Order-Item-6{
-		order: 7;
-	}
-	.Order-Item-7{
+	.Order-Item-4{
 		order: 6;
 	}
+	.Order-Item-5{
+		order: 4;
+	}
+	.Order-Item-6{
+		order: 5;
+	}
+	.Order-Item-8{
+		order: 9;
+	}
+	.Order-Item-9{
+		order: 8;
+	}
 	.Item-Image-Arrow-1{
-		transform: rotate(180deg);
+		transform: rotate(0deg);
 	}
 	.Item-Image-Arrow-2{
 		transform: rotate(0deg);
@@ -539,7 +539,7 @@ a:active {
 		transform: rotate(180deg);
 	}
 	.Item-Image-Arrow-4{
-		transform: rotate(0deg);
+		transform: rotate(180deg);
 	}
 	.Social-Container{
 		flex-direction: column;
@@ -565,17 +565,20 @@ a:active {
 		grid-column: 1;
 		margin-left: 0;
 	}
-	.Order-Item-2{
-		order: 2;
-	}
-	.Order-Item-3{
-		order: 3;
-	}
-	.Order-Item-6{
+	.Order-Item-4{
 		order: 6;
 	}
-	.Order-Item-7{
-		order: 7;
+	.Order-Item-5{
+		order: 5;
+	}
+	.Order-Item-6{
+		order: 4;
+	}
+	.Order-Item-8{
+		order: 8;
+	}
+	.Order-Item-9{
+		order: 9;
 	}
 	.Item-Image-Arrow-1{
 		transform: rotate(90deg);
