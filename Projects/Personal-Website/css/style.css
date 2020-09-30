@@ -240,10 +240,7 @@ a:active {
 	box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.35);
 }
 .Center-Grid-Item-Tall-Header {
-	margin-right: 20px;
-	margin-left: 36px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin: 10px 20px 10px 36px;
 	text-transform: uppercase;
 	font-family: Roboto Mono;
 	font-style: normal;
@@ -312,9 +309,7 @@ a:active {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 34px;
-	margin: 10px;
-	margin-top: 36px;
-	margin-left: 36px;
+	margin: 36px 10px 10px 36px;
 	line-height: 20px;
 	letter-spacing: 0.12em;
 	color: var(--c-bg-color);
@@ -456,31 +451,72 @@ a:active {
 	line-height: 16px;
 }
 .AboutMe-Container {
-	padding-top: 300px;
+	padding-top: 200px;
 	margin-bottom: 150px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 1300px;
-	background-color: var(--c-bg-color);
 }
 .AboutMe-Fields {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 .AboutMe-Field {
 	min-height: 200px;
-	background-color: aqua;
-	margin-top: 20px;
+	width: 900px;
+	justify-content: space-between;
+	margin-top: 50px;
 	display: flex;
 }
 .AboutMe-Grid {
 	display: grid;
-	width: 600px;
-	height: 600px;
 	background-color: var(--a-bg-color);
 	justify-content: center;
 	grid-template-columns: repeat(2, auto);
+}
+.AboutMe-Grid-Order-1{
+	order: 1;
+}
+.AboutMe-Grid-Order-2{
+	order: 2;
+}
+.AboutMe-Grid-Order-3{
+	order: 3;
+}
+.AboutMe-Grid-Order-4{
+	order: 4;
+}
+.AboutMe-Social-Container{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+.AboutMe-Banner{
+	width: 600px;
+	height: 200px;
+	background-color: var(--a-bg-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+}
+.AboutMe-Banner-HeaderBox{
+	width: 250px;
+}
+.AboutMe-Banner-Paragraph{
+	box-sizing: border-box;
+	padding: 20px;
+	width: 350px;
+	height: 100%;
+	font-family: Solway;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 20px;
+	letter-spacing: 0.1em;
 }
 .Footer {
 	font-family: Roboto Mono;
@@ -543,6 +579,7 @@ a:active {
 	}
 	.AboutMe-Container {
 		margin: 0;
+		margin-bottom: 150px;
 		width: 100%;
 	}
 }
@@ -634,6 +671,14 @@ a:active {
 	.Footer-LeftStrip-Container {
 		display: none;
 	}
+	.AboutMe-Field{
+		flex-direction: column;
+		align-items: center;
+	}
+	.AboutMe-Social-Container{
+		flex-direction: row;
+		justify-content: center;	
+	}
 }
 @media (max-width: 600px) {
 	.Center-Grid-Field {
@@ -674,6 +719,37 @@ a:active {
 		flex-direction: column;
 		height: 600px;
 		align-items: center;
+	}
+	.AboutMe-Grid{
+		grid-template-columns: 300px;
+	}
+	.AboutMe-Grid-Order-1{
+		order: 2;
+	}
+	.AboutMe-Grid-Order-2{
+		order: 1;
+	}
+	.AboutMe-Social-Container{
+		flex-direction: column;
+		align-items: center;
+	}
+	.AboutMe-Banner{
+		flex-direction: column;
+		align-items: center;
+		height: auto;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.AboutMe-Banner-HeaderBox h2,
+	.AboutMe-Banner-HeaderBox p,
+	.AboutMe-Banner-Paragraph{
+		text-align: center;
+		max-width: 80%;
+		padding: 0;
+		margin: 20px;
+	}
+	.AboutMe-Banner, .AboutMe-Field{
+		width: 100%;
 	}
 }
 @media (min-width: 2500px) {
