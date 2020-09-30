@@ -674,6 +674,7 @@ a:active {
 	.AboutMe-Field{
 		flex-direction: column;
 		align-items: center;
+		width: 600px;
 	}
 	.AboutMe-Social-Container{
 		flex-direction: row;
@@ -719,6 +720,9 @@ a:active {
 		flex-direction: column;
 		height: 600px;
 		align-items: center;
+	}
+	.AboutMe-Field{
+		width: 300px;
 	}
 	.AboutMe-Grid{
 		grid-template-columns: 300px;
