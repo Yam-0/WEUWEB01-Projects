@@ -8,30 +8,41 @@
 }
 /* latin */
 @font-face {
-	font-family: 'Solway';
+	font-family: "Solway";
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
-	src: local('Solway Regular'), local('Solway-Regular'), url(https://fonts.gstatic.com/s/solway/v3/AMOQz46Cs2uTAOCmhXo8.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	src: local("Solway Regular"), local("Solway-Regular"),
+		url(https://fonts.gstatic.com/s/solway/v3/AMOQz46Cs2uTAOCmhXo8.woff2)
+			format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+		U+2215, U+FEFF, U+FFFD;
 }
 /* latin */
 @font-face {
-	font-family: 'Russo One';
+	font-family: "Russo One";
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
-	src: local('Russo One'), local('RussoOne-Regular'), url(https://fonts.gstatic.com/s/russoone/v9/Z9XUDmZRWg6M1LvRYsHOz8mJ.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	src: local("Russo One"), local("RussoOne-Regular"),
+		url(https://fonts.gstatic.com/s/russoone/v9/Z9XUDmZRWg6M1LvRYsHOz8mJ.woff2)
+			format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+		U+2215, U+FEFF, U+FFFD;
 }
 /* latin */
 @font-face {
-	font-family: 'Roboto Mono';
+	font-family: "Roboto Mono";
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
-	src: url(https://fonts.gstatic.com/s/robotomono/v12/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	src: url(https://fonts.gstatic.com/s/robotomono/v12/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4.woff2)
+		format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+		U+2215, U+FEFF, U+FFFD;
 }
 
 html,
@@ -39,6 +50,12 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: var(--a-bg-color);
+}
+html .Dark-Background,
+body .Dark-Background {
+	margin: 0;
+	padding: 0;
+	background-color: var(--d-bg-color);
 }
 a {
 	transition: linear 100ms;
@@ -53,6 +70,9 @@ a:visited {
 }
 a:active {
 	text-decoration: none;
+}
+.Dark-Background {
+	background-color: var(--c-bg-color);
 }
 .Header-Container {
 	z-index: 2;
@@ -103,7 +123,7 @@ a:active {
 .Logo {
 	height: 80%;
 }
-.Navbar-Button{
+.Navbar-Button {
 	background-image: url(../assets/MenuItem.webp);
 	background-size: cover;
 	display: none;
@@ -112,7 +132,7 @@ a:active {
 	margin: 20px;
 	margin-left: auto;
 }
-.Navbar-Button:hover{
+.Navbar-Button:hover {
 	cursor: pointer;
 }
 .Header-Logo-Links {
@@ -179,31 +199,31 @@ a:active {
 	flex-direction: row;
 	justify-content: flex-start;
 }
-.Order-Item-1{
+.Order-Item-1 {
 	order: 1;
 }
-.Order-Item-2{
+.Order-Item-2 {
 	order: 2;
 }
-.Order-Item-3{
+.Order-Item-3 {
 	order: 3;
 }
-.Order-Item-4{
+.Order-Item-4 {
 	order: 4;
 }
-.Order-Item-5{
+.Order-Item-5 {
 	order: 5;
 }
-.Order-Item-6{
+.Order-Item-6 {
 	order: 6;
 }
-.Order-Item-7{
+.Order-Item-7 {
 	order: 7;
 }
-.Order-Item-8{
+.Order-Item-8 {
 	order: 8;
 }
-.Order-Item-9{
+.Order-Item-9 {
 	order: 9;
 }
 .Center-Grid-Item-Tall {
@@ -258,22 +278,22 @@ a:active {
 .Item-Image-6 {
 	background-image: url("../assets/SwainThresh.webp");
 }
-.Item-Image-Arrow{
+.Item-Image-Arrow {
 	z-index: 1;
 	height: 100%;
 	width: 100%;
 	background-image: url("../assets/ImageArrow.webp");
 }
-.Item-Image-Arrow-1{
+.Item-Image-Arrow-1 {
 	transform: rotate(0deg);
 }
-.Item-Image-Arrow-2{
+.Item-Image-Arrow-2 {
 	transform: rotate(90deg);
 }
-.Item-Image-Arrow-3{
+.Item-Image-Arrow-3 {
 	transform: rotate(180deg);
 }
-.Item-Image-Arrow-4{
+.Item-Image-Arrow-4 {
 	transform: rotate(0deg);
 }
 .Center-Grid-Item-TextRows {
@@ -282,7 +302,7 @@ a:active {
 	flex-direction: column;
 	justify-content: space-between;
 }
-.Center-Grid-Item-TextRows-Full{
+.Center-Grid-Item-TextRows-Full {
 	margin-right: 50px;
 }
 .TextBox-Header {
@@ -326,7 +346,7 @@ a:active {
 .Arrow img {
 	height: 70%;
 	width: 70%;
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5)); 
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 }
 .TextBox-Container-Wide {
 	width: 200px;
@@ -339,7 +359,7 @@ a:active {
 	margin: 0;
 	display: flex;
 }
-.Social-Left{
+.Social-Left {
 	height: 300px;
 	width: calc(50% - 150px);
 	background-color: var(--a-bg-color);
@@ -353,17 +373,17 @@ a:active {
 	display: flex;
 	box-shadow: inset 0px 14px 10px -8px #000000;
 }
-.Social-Box-Container{
+.Social-Box-Container {
 	height: 300px;
 	width: 300px;
 }
-.Social-Box-LatestProjects{
+.Social-Box-LatestProjects {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	margin: 0;
 }
-.Social-Box-LatestProjects-Header{
+.Social-Box-LatestProjects-Header {
 	margin: 10px;
 	margin-top: 30px;
 	margin-left: 20px;
@@ -376,7 +396,7 @@ a:active {
 	letter-spacing: 4px;
 	color: var(--a-bg-color);
 }
-.Social-Box-LatestProjects-Paragraph{
+.Social-Box-LatestProjects-Paragraph {
 	margin: 10px;
 	margin-left: 20px;
 	font-family: Solway;
@@ -387,7 +407,7 @@ a:active {
 	letter-spacing: 2px;
 	color: var(--a-bg-color);
 }
-.Social-Box-LatestProjects-Link{
+.Social-Box-LatestProjects-Link {
 	transition: linear 100ms;
 	font-family: inherit;
 	font-style: inherit;
@@ -398,7 +418,7 @@ a:active {
 	color: var(--b-bg-color);
 	text-decoration: underline;
 }
-.Social-Box-LatestProjects-Link:hover{
+.Social-Box-LatestProjects-Link:hover {
 	transition: linear 100ms;
 	color: var(--a-bg-color);
 }
@@ -408,32 +428,59 @@ a:active {
 .Social-Box-LatestProjects-Link:active {
 	text-decoration: none;
 }
-.Social-Contact-List{
+.Social-Contact-List {
 	margin: 10px;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: row;
 }
-.Social-Logo-Link{
+.Social-Logo-Link {
 	width: 100%;
 	height: 100%;
 }
-.Social-Logo{
+.Social-Logo {
 	transition: linear 100ms;
 	margin: 10px;
 	background-size: cover;
 	width: 60px;
 	height: 60px;
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5)) invert(0%); 
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5)) invert(0%);
 }
-.Social-Logo:hover{
+.Social-Logo:hover {
 	transition: linear 100ms;
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5)) invert(100%); 
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5)) invert(100%);
 }
-.Social-Mail{
+.Social-Mail {
 	margin: 0;
 	margin-left: 20px;
 	line-height: 16px;
+}
+.AboutMe-Container {
+	padding-top: 300px;
+	margin-bottom: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1300px;
+	background-color: var(--c-bg-color);
+}
+.AboutMe-Fields {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.AboutMe-Field {
+	min-height: 200px;
+	background-color: aqua;
+	margin-top: 20px;
+	display: flex;
+}
+.AboutMe-Grid {
+	display: grid;
+	width: 600px;
+	height: 600px;
+	background-color: var(--a-bg-color);
+	justify-content: center;
+	grid-template-columns: repeat(2, auto);
 }
 .Footer {
 	font-family: Roboto Mono;
@@ -449,14 +496,14 @@ a:active {
 	display: flex;
 	flex-direction: column;
 }
-.Footer-LeftStrip-Container{
+.Footer-LeftStrip-Container {
 	justify-self: flex-start;
 	height: 100px;
 	width: calc(50% - 150px);
 	background-color: var(--a-bg-color);
 	box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.35);
 }
-.Footer-TextBox{
+.Footer-TextBox {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
@@ -494,6 +541,10 @@ a:active {
 		margin: 0;
 		width: 100%;
 	}
+	.AboutMe-Container {
+		margin: 0;
+		width: 100%;
+	}
 }
 @media (max-width: 1050px) {
 	.Header-Header {
@@ -504,7 +555,7 @@ a:active {
 		height: 120px;
 		width: 100%;
 	}
-	.Navbar-Button{
+	.Navbar-Button {
 		display: inline;
 	}
 	.Header-Logo-Links {
@@ -531,95 +582,95 @@ a:active {
 		background-attachment: local;
 	}
 }
-@media (max-width: 900px){
-	.Center-Grid-Field{
+@media (max-width: 900px) {
+	.Center-Grid-Field {
 		grid-template-columns: repeat(2, 300px);
 	}
-	.Grid-Center{
+	.Grid-Center {
 		grid-column: span 2 / auto;
 		width: calc(100% - 50px);
 		display: flex;
 		margin-left: 50px;
 	}
-	.Order-Item-4{
+	.Order-Item-4 {
 		order: 6;
 	}
-	.Order-Item-5{
+	.Order-Item-5 {
 		order: 4;
 	}
-	.Order-Item-6{
+	.Order-Item-6 {
 		order: 5;
 	}
-	.Order-Item-8{
+	.Order-Item-8 {
 		order: 9;
 	}
-	.Order-Item-9{
+	.Order-Item-9 {
 		order: 8;
 	}
-	.Item-Image-Arrow-1{
+	.Item-Image-Arrow-1 {
 		transform: rotate(0deg);
 	}
-	.Item-Image-Arrow-2{
+	.Item-Image-Arrow-2 {
 		transform: rotate(0deg);
 	}
-	.Item-Image-Arrow-3{
+	.Item-Image-Arrow-3 {
 		transform: rotate(180deg);
 	}
-	.Item-Image-Arrow-4{
+	.Item-Image-Arrow-4 {
 		transform: rotate(180deg);
 	}
-	.Social-Container{
+	.Social-Container {
 		flex-direction: column;
 		align-items: center;
 	}
-	.Social-Right{
+	.Social-Right {
 		width: 100%;
 		justify-content: center;
 	}
-	.Social-Left{
+	.Social-Left {
 		width: 100%;
 		justify-content: center;
 	}
-	.Footer-LeftStrip-Container{
+	.Footer-LeftStrip-Container {
 		display: none;
 	}
 }
-@media (max-width: 600px){
-	.Center-Grid-Field{
+@media (max-width: 600px) {
+	.Center-Grid-Field {
 		grid-template-columns: 300px;
 	}
-	.Grid-Center{
+	.Grid-Center {
 		grid-column: 1;
 		margin-left: 0;
 	}
-	.Order-Item-4{
+	.Order-Item-4 {
 		order: 6;
 	}
-	.Order-Item-5{
+	.Order-Item-5 {
 		order: 5;
 	}
-	.Order-Item-6{
+	.Order-Item-6 {
 		order: 4;
 	}
-	.Order-Item-8{
+	.Order-Item-8 {
 		order: 8;
 	}
-	.Order-Item-9{
+	.Order-Item-9 {
 		order: 9;
 	}
-	.Item-Image-Arrow-1{
+	.Item-Image-Arrow-1 {
 		transform: rotate(90deg);
 	}
-	.Item-Image-Arrow-2{
+	.Item-Image-Arrow-2 {
 		transform: rotate(90deg);
 	}
-	.Item-Image-Arrow-3{
+	.Item-Image-Arrow-3 {
 		transform: rotate(90deg);
 	}
-	.Item-Image-Arrow-4{
+	.Item-Image-Arrow-4 {
 		transform: rotate(90deg);
 	}
-	.Social-Right{
+	.Social-Right {
 		flex-direction: column;
 		height: 600px;
 		align-items: center;
