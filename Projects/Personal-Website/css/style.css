@@ -476,25 +476,25 @@ a:active {
 	justify-content: center;
 	grid-template-columns: repeat(2, auto);
 }
-.AboutMe-Grid-Order-1{
+.AboutMe-Grid-Order-1 {
 	order: 1;
 }
-.AboutMe-Grid-Order-2{
+.AboutMe-Grid-Order-2 {
 	order: 2;
 }
-.AboutMe-Grid-Order-3{
+.AboutMe-Grid-Order-3 {
 	order: 3;
 }
-.AboutMe-Grid-Order-4{
+.AboutMe-Grid-Order-4 {
 	order: 4;
 }
-.AboutMe-Social-Container{
+.AboutMe-Social-Container {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	height: 100%;
 }
-.AboutMe-Banner{
+.AboutMe-Banner {
 	width: 600px;
 	height: 200px;
 	background-color: var(--a-bg-color);
@@ -503,10 +503,10 @@ a:active {
 	align-items: center;
 	flex-direction: row;
 }
-.AboutMe-Banner-HeaderBox{
+.AboutMe-Banner-HeaderBox {
 	width: 250px;
 }
-.AboutMe-Banner-Paragraph{
+.AboutMe-Banner-Paragraph {
 	box-sizing: border-box;
 	padding: 20px;
 	width: 350px;
@@ -671,14 +671,14 @@ a:active {
 	.Footer-LeftStrip-Container {
 		display: none;
 	}
-	.AboutMe-Field{
+	.AboutMe-Field {
 		flex-direction: column;
 		align-items: center;
 		width: 600px;
 	}
-	.AboutMe-Social-Container{
+	.AboutMe-Social-Container {
 		flex-direction: row;
-		justify-content: center;	
+		justify-content: center;
 	}
 }
 @media (max-width: 600px) {
@@ -721,23 +721,23 @@ a:active {
 		height: 600px;
 		align-items: center;
 	}
-	.AboutMe-Field{
+	.AboutMe-Field {
 		width: 300px;
 	}
-	.AboutMe-Grid{
+	.AboutMe-Grid {
 		grid-template-columns: 300px;
 	}
-	.AboutMe-Grid-Order-1{
+	.AboutMe-Grid-Order-1 {
 		order: 2;
 	}
-	.AboutMe-Grid-Order-2{
+	.AboutMe-Grid-Order-2 {
 		order: 1;
 	}
-	.AboutMe-Social-Container{
+	.AboutMe-Social-Container {
 		flex-direction: column;
 		align-items: center;
 	}
-	.AboutMe-Banner{
+	.AboutMe-Banner {
 		flex-direction: column;
 		align-items: center;
 		height: auto;
@@ -746,13 +746,14 @@ a:active {
 	}
 	.AboutMe-Banner-HeaderBox h2,
 	.AboutMe-Banner-HeaderBox p,
-	.AboutMe-Banner-Paragraph{
+	.AboutMe-Banner-Paragraph {
 		text-align: center;
 		max-width: 80%;
 		padding: 0;
 		margin: 20px;
 	}
-	.AboutMe-Banner, .AboutMe-Field{
+	.AboutMe-Banner,
+	.AboutMe-Field {
 		width: 100%;
 	}
 }
