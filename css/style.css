@@ -1,5 +1,6 @@
 @charset "UTF-8";
-html, body{
+html,
+body {
 	width: 100%;
 	height: 100%;
 	max-width: 100%;
@@ -7,10 +8,10 @@ html, body{
 	margin: 0px;
 	background-color: black;
 }
-strong{
+strong {
 	font-weight: 600;
 }
-p{
+p {
 	text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.93);
 	transition: linear 200ms;
 	color: rgb(255, 255, 255);
@@ -20,44 +21,48 @@ p{
 	line-height: 38px;
 	margin: 0px;
 }
-a{
+a {
 	text-decoration: none;
 	font-size: 25px;
 	line-height: 67px;
 	font-kerning: 0.5px;
 	font-weight: 600;
 }
-a:visited{
+a:visited {
 	text-decoration: none;
 }
-a:active{
+a:active {
 	text-decoration: none;
 }
-h2{
+h2 {
 	font-weight: 500;
 }
-.Container{
+.Container {
 	display: flex;
 	flex-direction: column;
 	width: inherit;
 	height: 100%;
 }
-.Top-Banner{
+.Top-Banner {
 	flex-grow: 0;
-	background-color: #ffffff;
+	background-color: #fff;
 	min-height: 200px;
 	height: 450px;
 }
-.Middle-Banner{
+.Middle-Banner {
 	flex-grow: 1;
-	background: rgb(37,37,60);
-	background: radial-gradient(circle, rgb(25, 25, 36) 0%, rgb(10, 10, 10) 100%);
+	background: rgb(37, 37, 60);
+	background: radial-gradient(
+		circle,
+		rgb(25, 25, 36) 0%,
+		rgb(10, 10, 10) 100%
+	);
 }
-.Shadow{
+.Shadow {
 	width: 100%;
 	height: 100px;
 }
-.Shadow-Top-Bottom{
+.Shadow-Top-Bottom {
 	position: absolute;
 	margin-top: 0px;
 	background: linear-gradient(
@@ -66,7 +71,7 @@ h2{
 		rgba(0, 0, 0, 0) 100%
 	);
 }
-.Shadow-Bottom-Top{
+.Shadow-Bottom-Top {
 	position: relative;
 	margin-top: -100px;
 	background: linear-gradient(
@@ -75,16 +80,16 @@ h2{
 		rgba(0, 0, 0, 0) 100%
 	);
 }
-.Fields{
+.Fields {
 	transition: linear 200ms;
 	max-width: 900px;
 	margin-top: -125px;
 	margin-left: auto;
 	margin-right: auto;
 }
-.Center-Field{
+.Center-Field {
 	transition: linear 100ms;
-	box-shadow: 0px 0px 20px #000000;
+	box-shadow: 0px 0px 20px #000;
 	background: linear-gradient(
 		300deg,
 		rgb(143, 18, 18) 0%,
@@ -93,16 +98,16 @@ h2{
 	min-height: 250px;
 	position: relative;
 }
-.Center-Bounds{
+.Center-Bounds {
 	padding-left: 60px;
 	padding-top: 30px;
 	padding-right: 60px;
 	padding-bottom: 30px;
 	text-align: center;
 	text-align-last: center;
-	font-family: "Segoe UI",Roboto,sans-serif;
+	font-family: "Segoe UI", Roboto, sans-serif;
 }
-.Header{
+.Header {
 	text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.356);
 	transition: linear 100ms;
 	color: white;
@@ -112,56 +117,56 @@ h2{
 	font-kerning: 1.44px;
 	line-height: 47px;
 }
-.Field{
+.Field {
 	margin-top: 25px;
 	margin-bottom: 100px;
 }
-.AlignBox{
+.AlignBox {
 	display: flex;
 	align-content: center;
 	align-items: center;
 	width: 100%;
 }
-.Links{
+.Links {
 	white-space: nowrap;
-	font-family: "Segoe UI",Roboto,sans-serif;
+	font-family: "Segoe UI", Roboto, sans-serif;
 	font-size: 19px;
 	font-weight: 700;
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
-.List-Entry{
+.List-Entry {
 	float: left;
 	clear: left;
 	color: white;
 	list-style-type: square;
 }
-.Link-List a{
+.Link-List a {
 	transition: linear 100ms;
 	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
 }
-.Link-List a:hover{
+.Link-List a:hover {
 	transition: linear 100ms;
 	color: rgb(78, 78, 78);
 	text-decoration: none;
 }
-.Field-Header{
+.Field-Header {
 	transition: linear 100ms;
 	color: rgb(255, 255, 255);
-	font-family: "Segoe UI",Roboto,sans-serif;
+	font-family: "Segoe UI", Roboto, sans-serif;
 	white-space: nowrap;
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 36px;
 	font-weight: 400;
 }
-.Social{
-	font-family: "Segoe UI",Roboto,sans-serif;
+.Social {
+	font-family: "Segoe UI", Roboto, sans-serif;
 	margin-bottom: 50px;
 }
-.Social h1{
+.Social h1 {
 	text-align: left;
 	color: white;
 	font-size: 56px;
@@ -169,7 +174,7 @@ h2{
 	font-kerning: 3.7px;
 	font-weight: 300;
 }
-.Social ul{
+.Social ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -178,10 +183,10 @@ h2{
 	font-kerning: 8px;
 	font-weight: 400;
 }
-.Social li{
+.Social li {
 	float: left;
 }
-.Social li a{
+.Social li a {
 	transition: linear 100ms;
 	filter: invert(40%);
 	color: white;
@@ -190,38 +195,38 @@ h2{
 	text-align: center;
 	margin: 10px;
 }
-.Social li a:hover{
+.Social li a:hover {
 	transition: linear 100ms;
 	filter: invert(100%);
 }
-.Social li a img{
+.Social li a img {
 	height: 60px;
 	width: 60px;
 }
-.Social li a img:hover{
+.Social li a img:hover {
 	color: white;
 }
-.Bottom-Banner{
-	font-family: "Segoe UI",Roboto,sans-serif;
-	background-color: #000000;
+.Bottom-Banner {
+	font-family: "Segoe UI", Roboto, sans-serif;
+	background-color: #000;
 	color: white;
 	height: 150px;
 	text-align: center;
 }
 @media (max-width: 1000px) {
-	.Fields{
+	.Fields {
 		margin-left: 50px;
 		margin-right: 50px;
 	}
 }
-@media (max-width: 850px){
-	.AlignBox{
+@media (max-width: 850px) {
+	.AlignBox {
 		flex-direction: column;
 	}
-	.Field .AlignBox{
+	.Field .AlignBox {
 		flex-direction: column-reverse;
 	}
-	.Social ul{
+	.Social ul {
 		display: flex;
 		justify-self: center;
 		align-items: center;
@@ -230,28 +235,28 @@ h2{
 		flex: 1;
 		display: inline-block;
 	}
-	.Social h1{
+	.Social h1 {
 		text-align: center;
 	}
 }
 @media (max-width: 670px) {
-	.Fields{
+	.Fields {
 		margin-left: 0;
 		margin-right: 0;
 	}
-	.Field-Header{
+	.Field-Header {
 		font-size: 7vw;
 	}
-	a{
+	a {
 		font-size: 6vw;
 	}
 }
 @media (max-width: 300px) {
-	.Field-Header{
+	.Field-Header {
 		transition: linear 100ms;
 		font-size: 21px;
 	}
-	a{
+	a {
 		font-size: 18px;
 	}
 }
